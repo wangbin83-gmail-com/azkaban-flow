@@ -1,0 +1,4 @@
+# sample hive job
+type=command
+dependencies=merge_ordid
+command=/usr/lib/hive/bin/hive --config /etc/hive/conf/ -f get_single_user.sql

@@ -1,0 +1,4 @@
+#  run filter and sort
+type=command
+dependencies=riskintercept_run
+command=bash /export/azkaban/shell/filter_and_sort.sh

@@ -1,0 +1,4 @@
+#  run mapreduce job
+type=command
+dependencies=split_and_load_data
+command=bash /export/azkaban/jar/TransactionStatistic/run_riskinterceptModel.sh

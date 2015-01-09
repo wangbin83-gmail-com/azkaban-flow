@@ -1,0 +1,2 @@
+type=command
+command=bash single_step.sh

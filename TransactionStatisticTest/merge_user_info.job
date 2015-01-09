@@ -1,0 +1,4 @@
+# sample hive job
+type=command
+dependencies=get_single_user
+command=/usr/lib/hive/bin/hive --config /etc/hive/conf/ -f merge_user_info.sql

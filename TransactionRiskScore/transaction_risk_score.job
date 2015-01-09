@@ -1,0 +1,2 @@
+type=command
+command=bash transaction_risk_score.sh

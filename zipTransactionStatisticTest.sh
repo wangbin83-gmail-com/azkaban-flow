@@ -1,0 +1,2 @@
+rm TransactionStatisticTest.zip
+zip -r TransactionStatisticTest.zip TransactionStatisticTest

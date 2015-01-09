@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+<property>
+  <name>mapred.job.tracker</name>
+  <value>172.17.59.20:54311</value>
+</property>
+<property>
+  <name>mapred.local.dir</name>
+  <value>/mnt/1/mapred,/mnt/2/mapred,/mnt/3/mapred,/mnt/4/mapred,/mnt/5/mapred,/mnt/6/mapred,/mnt/7/mapred,/mnt/8/mapred,/mnt/9/mapred,/mnt/10/mapred</value>
+</property>
+<property>
+  <name>mapred.system.dir</name>
+  <value>/mapred/sys/</value>
+</property>
+<property>
+  <name>mapred.tasktracker.map.tasks.maximum</name>
+  <value>30</value>
+</property>
+<property>
+  <name>mapred.tasktracker.reduce.tasks.maximum</name>
+  <value>15</value>
+</property>
+<property>
+  <name>mapred.reduce.parallel.copies</name>
+  <value>40</value>
+</property>
+<property>
+  <name>mapred.job.tracker.handler.count</name>
+  <value>40</value>
+</property>
+<property>
+  <name>tasktracker.http.threads</name>
+  <value>40</value>
+</property>
+<property>
+  <name>mapred.child.java.opts</name>
+  <value>-Xmx2048m</value>
+</property>
+<property>
+  <name>mapred.map.child.java.opts</name>
+  <value>-Xmx2048M</value>
+</property>
+<property>
+  <name>mapred.reduce.child.java.opts</name>
+  <value>-Xmx6120M</value>
+</property>
+<property>
+  <name>mapred.jobtracker.job.history.block.size</name>
+  <value>3145728</value>
+</property>
+<property>
+  <name>mapred.jobtracker.completeuserjobs.maximum</name>
+  <value>100</value>
+</property>
+<property>
+  <name>mapred.job.tracker.retiredjobs.cache.size</name>
+  <value>250</value>
+</property>
+ <property>
+  <name>mapred.job.tracker.jobhistory.lru.cache.size</name>
+  <value>50</value>
+</property>
+<property>
+ <name>mapred.compress.map.output</name>
+ <value>true</value>
+</property>
+<property>
+ <name>mapred.map.output.compression.codec</name>
+ <value>org.apache.hadoop.io.compress.SnappyCodec</value>
+</property>
+
+<property>
+ <name>mapreduce.jobtracker.restart.recover</name>
+ <value>true</value>
+</property>
+
+<property>
+  <name>mapred.task.timeout</name>
+  <value>960000</value>
+</property>
+
+<property>
+<name>mapreduce.input.fileinputformat.split.maxsize</name>
+<value>134217728</value>
+</property>
+
+<property>
+<name>mapreduce.tasktracker.outofband.heartbeat</name>
+<value>true</value>
+</property>
+
+<property>
+    <name>jobclient.progress.monitor.poll.interval</name>
+    <value>10</value>
+</property>
+
+<property>
+    <name>mapreduce.jobtracker.heartbeat.interval.min</name>
+    <value>10</value>
+</property>
+
+<property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0</value>
+</property>
+
+<property>
+<name>mapreduce.framework.name</name>
+<value>yarn</value>
+</property>
+
+<property>
+<name>mapred.max.split.size</name>
+<value>134217728</value>
+</property>
+
+<property>
+<name>mapreduce.tasktracker.outofband.heartbeat</name>
+<value>true</value>
+</property>
+
+<property>
+    <name>jobclient.progress.monitor.poll.interval</name>
+    <value>10</value>
+</property>
+
+<property>
+    <name>mapreduce.jobtracker.heartbeat.interval.min</name>
+    <value>10</value>
+</property>
+
+<property>
+    <name>mapred.reduce.slowstart.completed.maps</name>
+    <value>0</value>
+</property>
+
+<property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>172.17.59.20:10020</value>
+</property>
+<property>
+    <name>mapreduce.jobhistory.webapp.address</name>
+    <value>172.17.59.20:19888</value>
+</property>
+
+<property>
+  <name>jobtracker.thrift.address</name>
+    <value>0.0.0.0:9290</value>
+</property>
+<property>
+  <name>mapred.jobtracker.plugins</name>
+  <value>org.apache.hadoop.thriftfs.ThriftJobTrackerPlugin</value>
+  <description>Comma-separated list of jobtracker plug-ins to be activated.</description>
+</property>
+
+<property>
+  <name>mapreduce.randomtextwriter.mapsperhost</name>
+  <value>1</value>
+</property>
+
+<property>
+  <name>mapreduce.randomtextwriter.bytespermap</name>
+  <value>100000000</value>
+</property>
+
+<property>
+  <name>mapreduce.map.memory.mb</name>
+  <value>2048</value>
+</property>
+
+<property>
+  <name>mapreduce.reduce.memory.mb</name>
+  <value>6120</value>
+</property>
+
+  <property>
+    <name>yarn.app.mapreduce.am.staging-dir</name>
+    <value>/user</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobhistory.intermediate-done-dir</name>
+    <value>/user/history/done_intermediate</value>
+  </property>
+
+  <property>
+    <name>mapreduce.map.speculative</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>mapreduce.reduce.speculative</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobtracker.maxtasks.perjob</name>
+    <value>150</value>
+  </property>
+  <property>
+     <name>mapreduce.task.io.sort.mb</name>
+     <value>400</value>
+  </property>
+  <property>
+     <name>mapreduce.task.io.sort.factor</name>
+     <value>10</value>
+  </property>
+  <property>
+     <name>mapred.max.map.failures.percent</name>
+     <value>5</value>
+  </property>
+  <property>
+     <name>mapred.max.reduce.failures.percent</name>
+     <value>5</value>
+  </property>
+  <property>
+     <name>mapreduce.map.maxattempts</name>
+     <value>2</value>
+  </property>
+  <property>
+     <name>mapreduce.reduce.maxattempts</name>
+     <value>2</value>
+  </property>
+  <property>
+  <name>mapreduce.job.queuename</name>
+  <value>BI</value>
+  </property>
+  
+</configuration>

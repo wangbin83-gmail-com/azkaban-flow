@@ -1,0 +1,3 @@
+# split and load files
+type=command
+command=bash /export/azkaban/shell/split_and_load_giftcard_rule.sh $table

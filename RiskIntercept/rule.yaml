@@ -1,0 +1,107 @@
+---
+name: ordsum
+type: RANGE
+value: 
+   - 0-1999
+   - 2000-3999
+   - 4000-4999
+
+---
+name: before_prefr_unit_price
+type: RANGE
+value: 
+   - 50-50
+   - 100-300
+   - 500-1000
+
+---
+name: sale_qtty
+type: RANGE
+value: 
+   - 1-4
+   - 5-
+
+---
+name: ordageday
+type: RANGE
+value: 
+   - 0-6
+   - 7-
+
+---
+name: user_lv_cd
+type: LIST
+value: 
+   - 钻石会员
+   - 金牌会员
+   - 注册会员、铜牌会员、银牌会员
+
+---
+name: ord_create_user_lv_cd
+type: RAW
+value: 
+   - 注册会员
+   - 铜牌会员
+   - 银牌会员
+   - 金牌会员
+   - 钻石会员
+
+---
+name: user_site_province_id
+type: LIST
+value: 
+   - -22、32
+   - 0、16、23
+   - 1、8、11、17
+   - 5、6、13、19
+   - -1、2、3、4、7、9、10、12、14、15、18、20、21、22、24、25、26、27、28、29、30、31、42、84、4733
+
+---
+name: sale_ord_tm
+type: RANGE_LIST
+value: 
+   - 7-13、22-24
+   - 14-21
+
+---
+name: user_reg_tm
+type: RANGE_LIST
+value: 
+   - 1-11、21-24
+   - 12-20
+
+---
+name: month_ord
+type: RANGE
+value: 
+   - 0-0
+   - 1-1
+   - 2-2
+   - 3-
+
+
+---
+name: month_ip
+type: RANGE
+value: 
+   - 0-0
+   - 1-1
+   - 2-2
+   - 3-
+
+---
+name: month_online
+type: RANGE
+value: 
+   - 0-0
+   - 1-1
+   - 2-2
+   - 3-
+
+---
+name: month_giftcard
+type: RANGE
+value: 
+   - 0-0
+   - 1-2
+   - 3-
